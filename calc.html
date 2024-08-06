@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Calculator Aneh</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #333;
+            /* dark mode background */
+        }
+
+        .calculator {
+            width: 250px;
+            margin: 40px auto;
+            padding: 20px;
+            border: 1px solid #444;
+            /* dark mode border */
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .display {
+            width: 100%;
+            height: 40px;
+            font-size: 24px;
+            padding: 10px;
+            border: none;
+            border-radius: 10px;
+            text-align: right;
+            background-color: #444;
+            /* dark mode background */
+            color: #fff;
+            /* dark mode text color */
+        }
+
+        .button {
+            width: 50px;
+            height: 40px;
+            font-size: 18px;
+            padding: 10px;
+            border: none;
+            border-radius: 10px;
+            background-color: #444;
+            /* dark mode background */
+            color: #fff;
+            /* dark mode text color */
+            cursor: pointer;
+        }
+
+        .button:hover {
+            background-color: #555;
+            /* dark mode hover background */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="calculator">
+        <input type="text" id="display" class="display" readonly>
+        <div class="button-container">
+            <button class="button" onclick="clickButton(this)">7</button>
+            <button class="button" onclick="clickButton(this)">8</button>
+            <button class="button" onclick="clickButton(this)">9</button>
+            <button class="button" onclick="clickButton(this)">/</button>
+            <button class="button" onclick="clickButton(this)">4</button>
+            <button class="button" onclick="clickButton(this)">5</button>
+            <button class="button" onclick="clickButton(this)">6</button>
+            <button class="button" onclick="clickButton(this)">*</button>
+            <button class="button" onclick="clickButton(this)">1</button>
+            <button class="button" onclick="clickButton(this)">2</button>
+            <button class="button" onclick="clickButton(this)">3</button>
+            <button class="button" onclick="clickButtonn(this)">-</button>
+            <button class="button" onclick="clickButton(this)">0</button>
+            <button class="button" onclick="clickButton(this)">.</button>
+            <button class="button" onclick="clickButton(this)">+</button>
+            <button class="button" onclick="clickButton(this)">=</button>
+            <button class="button" onclick="deleteLastChar()">DEL</button>
+            <button class="button" onclick="clearEntry()">C</button>
+        </div>
+    </div>
+    
+    <center><p>Hallo Syara, calculator ini aneh tau.<br>coba deh 1+14, masa calculatornya bisa tau..</p></center>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
